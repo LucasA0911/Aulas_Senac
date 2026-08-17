@@ -6,8 +6,8 @@ def lampada(x1:int,x2:int,b:int):
 
         Args:
             x1 (int): Defina a hora com um valo inteiro. EX: 6, 22.
-            pessoa (int): Defina 1 se tiver uma pessoa, e 0 se não tiver uma pessoa. 
-            seguro (int) Digite 1 se quer uma programação mais segura, e 0 se quiser menos segura.
+            x2 (int): Defina 1 se tiver uma pessoa, e 0 se não tiver uma pessoa. 
+            b (int) Digite 1 se quer uma programação mais segura, e 0 se quiser menos segura.
 
         Returns:
             str: Retorna se a luz esta acesa ou apagada.
@@ -24,12 +24,13 @@ def lampada(x1:int,x2:int,b:int):
     else:
         x2 = 0 # não tem pessoa
     
-    if b == 1:
+    if b == 1: # define o vies
         b = 2 # vies para quando eu quero que o sistema acenda com mais facilidade
     else:
         b = 6 # vies para quando eu quero que o sistema esteja apagado com mais facilidade
 
-    z = (w1 * x1) + (w2 * x2) - b
+    z = (w1 * x1) + (w2 * x2) - b # calculo base de um perceptron
+
     if z >= 0:
         print('Luz acesa')
     else: 
